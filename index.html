@@ -3,11 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
+
+  <input type="radio" id="btn-1" name="toggle" checked>
+  <input type="radio" id="btn-2" name="toggle">
+  <input type="radio" id="btn-3" name="toggle">
+
+
   <div class="wrapper">
     <div class="wrapper__content">
-      <div class="header"></div>
+
+
+      <header class="header">
+
+        <div class="logo"></div>
+
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">Каталог
+              <ul class="main-nav__sublist">
+                <li class="main-nav__subitem main-nav__subitem--new">Новинки</li>
+                <li class="main-nav__subitem">Сливочное</li>
+                <li class="main-nav__subitem">Щербеты</li>
+                <li class="main-nav__subitem">Фруктовый лед</li>
+                <li class="main-nav__subitem">Мелорин</li>
+              </ul>
+            </li>
+            <li class="main-nav__item">Доставка и оплата</li>
+            <li class="main-nav__item">О Компании</li>
+          </ul>
+        </nav>
+
+
+        <div class="header__right-block">
+          <div class="header__btn">
+            <div class="search"></div>
+            <div class="personal"></div>
+            <div class="basket"></div>
+          </div>
+          <div class="header__contact">
+            <span class="header__schedule">С 10 до 20, ежедневно</span>
+            <span class="header__tel">8 812 450-25-25</span>
+          </div>
+        </div>
+      </header>
+
+
       <div class="slider">
         <div class="slide" id="slide1">
           <div class="slide__title">Крем-брюле и пломбир с малиновым джемом</div>
@@ -27,6 +72,105 @@
           <label for="btn-3"></label>
         </div>
       </div>
+
+
+      <div class="action">
+        <div class="action__item">
+          <img src="img/banner_fon_1.png" alt="Малинки"/>
+          <div class="action__title">Малинка даром!</div>
+          <div class="action__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</div>
+          <a href="#" class="btn">Хочу варенье!</a>
+        </div>
+        <div class="action__item">
+          <img src="img/banner_fon_2.png" alt="Шоколадки"/>
+          <div class="action__title">Шоколадки даром!</div>
+          <div class="action__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</div>
+          <a class="btn" href="#">Хочу шоколадки!</a>
+        </div>
+      </div>
+
+      <div class="hit">
+        <div class="hit_item">
+          <img src="img/hit_fon_1.png" alt="Мороженное"/>
+          <div class="hit__icon"></div>
+          <div class="hit__price">310</div>
+          <a href="#" class="hit__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </div>
+        <div class="hit_item">
+          <img src="img/hit_fon_2.png" alt="Мороженное"/>
+          <div class="hit__icon"></div>
+          <div class="hit__price">380</div>
+          <a href="#" class="hit__name">Сливочно-кофейное с кусочками шоколада</a>
+        </div>
+        <div class="hit_item">
+          <img src="img/hit_fon_3.png" alt="Мороженное"/>
+          <div class="hit__icon"></div>
+          <div class="hit__price">355</div>
+          <a href="#" class="hit__name">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </div>
+        <div class="hit_item">
+          <img src="img/hit_fon_4.png" alt="Мороженное"/>
+          <div class="hit__icon"></div>
+          <div class="hit__price">415</div>
+          <a href="#" class="hit__name">Сливочное крем-брюле с карамельной подливкой</a>
+        </div>
+      </div>
+
+      <div class="info">
+        <h1 class="info__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+        <div class="info_text info_text--own">
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        </div>
+        <div class="info_text info_text--highest">
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        <div class="info_text info_text--farmer">
+          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        </div>
+        <div class="info_text info_text--delivery">
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+          </p>
+        </div>
+      </div>
+
+      <div class="blog">
+        <img src="img/fon_strawberry.png" alt="Клубника"/>
+        <span class="blog__desc">Новое в нашем блоге</span>
+        <a href="#" class="blog_title">10  способов сервировки фруктовых щербетов к столу</a>
+      </div>
+
+
+      <div class="post">
+        <p class="post_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+        <input type="email" class="post_mail"/>
+        <a href="#" class="btn">отправить</a>
+      </div>
+
+
+      <div class="map"></div>
+
+
+      <footer class="main-footer">
+        <div class="social">
+          <a href="#" class="social__item social__item--tw"></a>
+          <a href="#" class="social__item social__item--in"></a>
+          <a href="#" class="social__item social__item--fb"></a>
+          <a href="#" class="social__item social__item--vk"></a>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#" class="footer__nav-item">Для поставщиков</a>
+          <a href="#" class="footer__nav-item">Наши документы</a>
+          <a href="#" class="footer__nav-item">О производстве</a>
+          <a href="#" class="footer__nav-item">Экологические стандарты</a>
+        </nav>
+
+        <div class="develop">
+          <p class="develop__text">Сделано в <a href="#" class="develop__link">HTML Academy</a> © 2016</p>
+        </div>
+      </footer>
+
+
     </div>
   </div>
   </body>
