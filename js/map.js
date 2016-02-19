@@ -1,11 +1,12 @@
 (function (window) {
 
   window.initMap = function () {
-    var myLatLng = {lat: 34.8697395, lng: -111.76098960000002};
+    var myLatLng = {lat: 59.9387987, lng: 30.3231642};
+    var myLatLngCenter = {lat: 59.9388614, lng: 30.3249716};
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 7,
-      center: myLatLng,
+      zoom: 17,
+      center: myLatLngCenter,
       disableDefaultUI: true
     });
 
