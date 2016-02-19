@@ -935,5 +935,93 @@ input[type="radio"] {
   margin-top: 80px;
   text-align: right;
   font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
   color: #ffffff;
+  margin-bottom: 38px;
+}
+
+.paginator__item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+.paginator__item--activ {
+  border-radius: 50%;
+  background: #ffffff;
+  color: #353535;
+}
+
+.goods {
+  padding: 0;
+}
+
+.good {
+  width: 267px;
+  margin: 0 23px 40px 0;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+}
+
+.good--img {
+  margin-bottom: 18px;
+}
+
+.goods .good:nth-child(4n) {
+  margin-right: 0;
+}
+
+.good__price {
+  position: absolute;
+  top: 214px;
+  left: 0;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.good__price--number {
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.good__price--name {
+  font-size: 30px;
+  line-height: 13px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.good__name {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.good__inner {
+  display: none;
+  width: 278px;
+  height: 405px;
+  position: absolute;
+  background: rgba(248, 247, 244, 0.3);
+  border-radius: 5px;
+  margin: -6px 0 0 -6px;
+}
+
+.btn--good {
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+}
+
+.good:hover .good__inner {
+  display: block;
+  z-index: 10;
 }
