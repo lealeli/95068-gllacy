@@ -830,3 +830,103 @@ body > input[type="radio"] {
 {
   left: 140px;
 }
+
+.filter__checkbox-item span {
+  vertical-align: top;
+  line-height: 18px;
+  display: inline-block;
+  padding: 10px 18px 0 11px;
+  font-size: 16px;
+}
+
+.filter__checkbox-item:first-of-type {
+  margin-left: 15px;
+}
+
+.filter__checkbox-item:before {
+  content: '';
+  width: 21px;
+  height: 21px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  margin-top: 8px;
+  display: inline-block;
+  line-height: 56px;
+  background: url("../img/icon_filter.png") no-repeat;
+  background-position: -40px 0;
+}
+
+.filter__checkbox-item:hover:before {
+  background-position: -40px -39px;
+}
+
+.filter__checkbox-item:active:before {
+  background-position: -40px -80px;
+}
+
+input[type="checkbox"]:checked + .filter__checkbox-item:before {
+  content: '';
+  background-position: -121px 0;
+}
+
+input[type="checkbox"]:checked + .filter__checkbox-item:hover:before {
+  background-position: -121px -39px;
+}
+
+input[type="checkbox"]:checked + .filter__checkbox-item:active:before {
+  background-position: -121px -80px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.filter__radio-item span {
+  vertical-align: top;
+  line-height: 18px;
+  display: inline-block;
+  padding: 10px 17px 0 10px;
+  font-size: 16px;
+}
+
+.filter__radio-item:first-of-type {
+  margin-left: 15px;
+}
+
+.filter__radio-item:before {
+  content: '';
+  width: 21px;
+  height: 21px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  margin-top: 8px;
+  display: inline-block;
+  line-height: 56px;
+  background: url("../img/icon_filter.png") no-repeat;
+  background-position: 0 0;
+}
+
+.filter__radio-item:hover:before {
+  background-position: 0 -39px;
+}
+
+.filter__radio-item:active:before {
+  background-position: 0 -80px;
+}
+
+input[type="radio"]:checked + .filter__radio-item:before {
+  content: '';
+  background-position: -81px 0;
+}
+
+input[type="radio"]:checked + .filter__radio-item:hover:before {
+  background-position: -81px -39px;
+}
+
+input[type="radio"]:checked + .filter__radio-item:active:before {
+  background-position: -81px -80px;
+}
+
+input[type="radio"] {
+  display: none;
+}
