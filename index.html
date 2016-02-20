@@ -64,12 +64,12 @@
 
         <div class="header__right-block">
           <div class="header__btn">
-            <a href="#" class="search">
+            <div class="search">
               <div class="search__block">
                 <input type="text" placeholder="Что ищем?"/>
               </div>
-            </a>
-            <a href="#" class="personal">
+            </div>
+            <div class="personal">
               <span>Вход</span>
               <div class="personal__block">
                 <input type="text" placeholder="Электронная почта"/>
@@ -78,8 +78,31 @@
                 <a href="#" >Забыли пароль?</a>
                 <a href="#" >Новая регистрация</a>
               </div>
-            </a>
-            <a href="#" class="basket">Пусто</a>
+            </div>
+            <div class="basket">
+              <span>2 товара</span>
+              <div class="basket__block">
+                <div class="basket__good">
+                  <div class="basket__close"><span></span></div>
+                  <div class="basket__img"><img src="img/good_basket_1.png" alt=""/></div>
+                  <div class="basket__name">Пломбир с апельсиновым джемом</div>
+                  <div class="basket__sum">1,5 кг х 200 руб.</div>
+                  <div class="basket__price">300 руб.</div>
+                </div>
+                <div class="basket__good">
+                  <div class="basket__close"><span></span></div>
+                  <div class="basket__img"><img src="img/good_basket_2.png" alt=""/></div>
+                  <div class="basket__name">Клубничный пломбир с присыпкой из белого шоколада</div>
+                  <div class="basket__sum">1,5 кг х 300 руб.</div>
+                  <div class="basket__price">450 руб.</div>
+                </div>
+                <hr class="basket__line"/>
+                <div class="total">
+                  Итого 750 руб.
+                </div>
+                <a href="#" class="btn">Оформить заказ</a>
+              </div>
+            </div>
           </div>
           <div class="header__contact">
             <span class="header__schedule">С 10 до 20, ежедневно</span>
@@ -223,7 +246,7 @@
               (с 10 до 20 ежедневно)
             </p>
           </div>
-          <input class="btn btn--feedback" type="button" value="Форма обратной связи"/>
+          <a class="btn">Форма обратной связи</a>
         </div>
       </div>
 
