@@ -64,9 +64,22 @@
 
         <div class="header__right-block">
           <div class="header__btn">
-            <a class="search"></a>
-            <a class="personal">Вход</a>
-            <a class="basket">Пусто</a>
+            <a href="#" class="search">
+              <div class="search__block">
+                <input type="text" placeholder="Что ищем?"/>
+              </div>
+            </a>
+            <a href="#" class="personal">
+              <span>Вход</span>
+              <div class="personal__block">
+                <input type="text" placeholder="Электронная почта"/>
+                <input type="password" placeholder="Пароль"/>
+                <a href="#" class="btn">Войти</a>
+                <a href="#" >Забыли пароль?</a>
+                <a href="#" >Новая регистрация</a>
+              </div>
+            </a>
+            <a href="#" class="basket">Пусто</a>
           </div>
           <div class="header__contact">
             <span class="header__schedule">С 10 до 20, ежедневно</span>
@@ -188,7 +201,31 @@
       </div>
 
 
-      <div class="map" id="map"></div>
+      <div class="map-content">
+        <div class="map" id="map"></div>
+        <div class="feedback">
+          <div class="feedback__inner">
+            <p class="feedback__text">
+              Адрес главного офиса и офлайн магазина:
+            </p>
+            <p class="feedback__text-bold">
+              ул. Большая Конюшенная 19/8, Санкт-Петербург
+            </p>
+          </div>
+          <div class="feedback__inner">
+            <p class="feedback__text">
+              Для заказов по телефону:
+            </p>
+            <p class="feedback__text-bold">
+              8 812 450-25-25
+            </p>
+            <p class="feedback__text">
+              (с 10 до 20 ежедневно)
+            </p>
+          </div>
+          <input class="btn btn--feedback" type="button" value="Форма обратной связи"/>
+        </div>
+      </div>
 
 
       <footer class="main-footer">

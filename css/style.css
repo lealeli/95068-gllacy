@@ -211,6 +211,7 @@ body > input[type="radio"] {
 .search {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   width: 32px;
   height: 32px;
   background: rgba(255, 255, 255, 0.2) url(../img/icon_header.png) no-repeat;
@@ -218,32 +219,98 @@ body > input[type="radio"] {
   border-radius: 16px;
 }
 
+.search:hover {
+  background: #f8f7f4 url(../img/icon_header.png) no-repeat;
+  background-position: 7px -46px;
+}
+
+.search:hover .search__block {
+  display: block;
+}
+
+.search__block {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 270px;
+  padding: 17px;
+  background: #fefefd;
+  border-radius: 13px;
+}
+
 .personal {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   width: 91px;
   height: 32px;
   background: rgba(255, 255, 255, 0.2) url(../img/icon_header.png) no-repeat;
-  background-position: -65px 5px;
-  padding: 5px 16px 5px 0;;
+  background-position: -56px 5px;
+  padding: 5px 16px 5px 0;
   border-radius: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.personal:hover {
+  color: #323232;
+  background: #f8f7f4 url(../img/icon_header.png) no-repeat;
+  background-position: -56px -46px;
+}
+
+.personal:hover .personal__block {
+  display: block;
+}
+
+.personal__block {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 270px;
+  padding: 17px;
+  background: #fefefd;
+  border-radius: 13px;
+}
+
+.basket {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 117px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2) url(../img/icon_header.png) no-repeat;
+  background-position: -198px 5px;
+  padding: 5px 16px 5px 0;
+  border-radius: 16px;
+  text-decoration: none;
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
 }
 
-.basket {
-  display: inline-block;
-  vertical-align: top;
-  width: 117px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.2) url(../img/icon_header.png) no-repeat;
-  background-position: -140px 5px;
-  padding: 5px 16px 5px 0;;
-  border-radius: 16px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
+.basket__block {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 302px;
+  padding: 17px;
+  background: #fefefd;
+  border-radius: 13px;
+}
+
+.basket:hover {
+  color: #323232;
+  background: #f8f7f4 url(../img/icon_header.png) no-repeat;
+  background-position: -198px -46px;
+}
+
+.basket:hover .basket__block {
+  display: block;
 }
 
 .header__contact {
@@ -607,7 +674,48 @@ body > input[type="radio"] {
 }
 .map {
   width: 100%;
-  height: 320px;
+  height: 430px;
+}
+
+.map-content {
+  width: 100%;
+  height: 430px;
+  position: relative;
+}
+
+.feedback {
+  position: absolute;
+  right: 27px;
+  bottom: 59px;
+  width: 302px;
+  padding: 28px 24px;
+  background: #fefefd;
+  border-radius: 13px;
+}
+
+.feedback__inner {
+  margin-bottom: 26px;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__text-bold {
+  font-size: 18px;
+  line-height: 24px;
+  color: #343434;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.btn--feedback {
+  outline: none;
 }
 
 .main-footer {
